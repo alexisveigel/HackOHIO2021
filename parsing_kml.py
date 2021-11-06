@@ -1,8 +1,10 @@
 from pykml import parser
 import pandas as pd
 
+# Path to data folder
 adnan_path  = "C:/Users/adnanreddy/Downloads/HOhio/"
 
+# Extract Transformers.kmz to file Transformers (I used 7Zip), inside should be doc.kml
 filename = adnan_path+'Transformers/doc.kml'
 
 
