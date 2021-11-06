@@ -1,4 +1,6 @@
 from GPSPhoto import gpsphoto
+import pandas as pd
+
 
 #create function
 def getLatLon(photo):

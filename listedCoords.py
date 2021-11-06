@@ -19,9 +19,3 @@ for files in os.listdir(alexisDirectory):
     print(table)
 
 
-#i = 0 #counter
-#while i < listSize: #build list of coords
-    #print(getLatLon(fileList(i)))
-    #i += 1
-
-
