@@ -1,5 +1,5 @@
 from exif import Image
-with open('1.JPG') as image_file:
+with open('1.JPG', 'rb') as image_file:
     testImage = Image(image_file)
 
-testImage.list_all()
+dir(image_file)
