@@ -1,5 +1,2 @@
-from PIL import Image 
-from PIL.ExifTags import TAGS 
-
-imagename = '1.JPG'
-image = Image
+from GPSPhoto import gpsphoto
+gpsphoto.getGPSData('1.JPG')
