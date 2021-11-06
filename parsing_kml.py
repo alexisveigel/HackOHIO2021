@@ -11,6 +11,7 @@ poles = adnan_path + 'Poles/doc.kml'
 transformers = adnan_path + 'Transformers/doc.kml'
 
 
+# /Users/hafsagureye/Documents/HOhio
 
 with open(poles) as f:
     docP = parser.parse(f).getroot()
