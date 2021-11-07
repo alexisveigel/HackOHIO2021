@@ -4,14 +4,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Path to data folder
-adnan_path  = '/Users/kateherz/HackOHIO2021/'
+user_path  = '/Users/hafsagureye/Documents/HOhio/'
 
 # Extract Transformers.kmz to file Transformers (I used 7Zip), inside should be doc.kml
-poles = adnan_path + 'Poles/doc.kml'
-transformers = adnan_path + 'Transformers/doc.kml'
+poles = user_path + 'Poles/doc.kml'
+transformers = user_path + 'Transformers/doc.kml'
 
 
-# /Users/hafsagureye/Documents/HOhio
+# /Users/kateherz/Documents/HACKOHIO2021/
 
 with open(poles) as f:
     docP = parser.parse(f).getroot()
@@ -60,7 +60,8 @@ long_numsT = []
 for x in longT:
   long_numsT.append(float(x))
 
-plt.scatter(lat_nums,long_nums,.5)
-plt.scatter(lat_numsT,long_numsT,.5)
+plt.scatter(lat_nums,long_nums,.5, label = "Pole")
+plt.scatter(lat_numsT,long_numsT,.5, label = "Transformers")
+plt.legend(loc='upper right', shadow=True, fontsize='medium')
 
 plt.show()
