@@ -23,8 +23,8 @@ latP = []
 longP = []
 for e in docP.Document.Folder.Placemark:
   coor = e.Point.coordinates.text.split(',')
-  latP.append(coor[0])
-  longP.append(coor[1])
+  latP.append(coor[1])
+  longP.append(coor[0])
 
 with open(transformers) as f:
      docT = parser.parse(f).getroot()
@@ -34,8 +34,8 @@ latT = []
 longT = []
 for e in docT.Document.Folder.Placemark:
   coor = e.Point.coordinates.text.split(',')
-  latT.append(coor[0])
-  longT.append(coor[1])
+  latT.append(coor[1])
+  longT.append(coor[0])
 
 with open(conductors) as f:
      docC = parser.parse(f).getroot()
@@ -47,8 +47,8 @@ longC = []
 
 for e in docC.Document.Folder.Placemark:
   coor = e.MultiGeometry.LineString.coordinates.text.split(',')
-  latC.append(coor[0])
-  longC.append(coor[1])
+  latC.append(coor[1])
+  longC.append(coor[0])
 
 
 plt.title("Latitude and Longtitude")  # Add a title to the axes.
