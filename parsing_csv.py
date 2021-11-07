@@ -14,6 +14,7 @@ conductors = user_path + 'Primary_Conductor/doc.kml'
 
 # /Users/kateherz/Documents/HACKOHIO2021/
 
+#retrieve
 with open(poles) as f:
      docP = parser.parse(f).getroot()
 
