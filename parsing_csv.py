@@ -82,8 +82,8 @@ for x in longC:
   long_numsC.append(float(x))
 
 df_p = pd.DataFrame()
-df_p['Latitude'] = lat_nums
-df_p['Longitude'] = long_nums
+df_p['Longitude'] = lat_nums
+df_p['Latitude'] = long_nums
 
 df_t = pd.DataFrame()
 df_t['Latitude'] = lat_numsT
